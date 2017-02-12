@@ -1,0 +1,429 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentHome">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="11"
+        android:gravity="top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:weightSum="9"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:weightSum="5"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:gravity="end|bottom"
+                    >
+                    <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                        android:id="@+id/_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="7sp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dmsGrey"
+                        android:text="25th July 2016"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:weightSum="5"
+                    android:gravity="center"
+                    >
+
+                    <!--ImageView-->
+                    <!--<ImageView
+                        android:id="@+id/_imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        />
+-->
+                    <!--android:src="@drawable/chk2"-->
+
+                    <!--  <com.android.volley.toolbox.NetworkImageView
+                          android:id="@+id/networkImageView"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1.5"
+                          android:layout_centerHorizontal="true"
+                          android:background="#ffffff"/>-->
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:src="@drawable/adegbs"
+                        android:id="@+id/circleView"
+                        app:civ_border_width="0dp"
+                        app:civ_border_color="#ffffff"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:weightSum="5"
+                android:layout_marginTop="10dp"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/_teacher_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Destiny Okemute"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                        android:textAlignment="gravity"
+                        android:gravity="center_horizontal|top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:weightSum="5"
+                    android:gravity="top|center_horizontal"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2.1"
+                        android:layout_height="match_parent"
+                        android:weightSum="5"
+                        >
+
+                        <Button
+                            android:id="@+id/_teachpost"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.6"
+                            android:src="@drawable/checkmark"
+                            android:clickable="false"
+                            android:text="Admin General"
+                            android:textSize="13dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/select_sqrect_background3"
+                            android:alpha="0.9"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:weightSum="10"
+            android:background="@color/dmsGrey"
+            >
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="8"
+                android:gravity="start|bottom"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:gravity="start|bottom"
+                    >
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:background="@color/dmsPink"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:weightSum="5"
+                    android:gravity="left|bottom"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.5"
+                        android:gravity="left|center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tasks"
+                            android:textColor="@color/dmsPurple"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:weightSum="8"
+                android:gravity="start|top"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|bottom"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="match_parent"
+                    android:weightSum="3.6"
+                    android:gravity="top|center_horizontal"
+                    >
+                    <LinearLayout
+                        android:id="@+id/_ass"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:alpha="0.7"
+                        android:weightSum="5"
+                        android:background="@drawable/select_roundrect_background2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="Assignments"
+                            android:textColor="@color/dmsDarkGrey"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginLeft="20dp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical|left"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:alpha="0.7"
+                            android:background="@drawable/select_roundrect_background2"
+                            android:layout_gravity="right"
+                            android:gravity="right">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_marginTop="0dp"
+                                android:src="@drawable/img_assign"
+                                android:layout_gravity="end|center_vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:id="@+id/_ontest"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start"
+                        android:alpha="0.7"
+                        android:weightSum="5"
+                        android:background="@drawable/select_roundrect_background2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="Take Quiz"
+                            android:textColor="@color/dmsDarkGrey"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginLeft="20dp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical|left"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:alpha="0.7"
+                            android:background="@drawable/select_roundrect_background2"
+                            android:layout_gravity="right"
+                            android:gravity="right">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_marginTop="0dp"
+                                android:src="@drawable/img_test"
+                                android:layout_gravity="end|center_vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:id="@+id/_article"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start"
+                        android:alpha="0.7"
+                        android:weightSum="5"
+                        android:background="@drawable/select_roundrect_background2"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="Upload Article"
+                            android:textColor="@color/dmsDarkGrey"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginLeft="20dp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical|left"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:alpha="0.7"
+                            android:background="@drawable/select_roundrect_background2"
+                            android:layout_gravity="right"
+                            android:gravity="right">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_marginTop="0dp"
+                                android:src="@drawable/img_article"
+                                android:layout_gravity="end|center_vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

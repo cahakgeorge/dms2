@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DMS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="atsymbol">\@</string>
+
+    <string name="exitAuth">Exit Application</string>
+    <string name="exitConf">Are you sure you want to exit the application?</string>
+    <string name="logoutAuth">Logout</string>
+    <string name="logoutConf">Are you sure you want to clear your login details?</string>
+    <string name="getQuizTit">Update Quiz</string>
+    <string name="getQuizCon">Do you want to update quiz?</string>
+    <string name="exitPos">Yes</string>
+    <string name="exitNeg">No</string>
+    <string name="title_activity_ad">Ad</string>
+
+</resources>

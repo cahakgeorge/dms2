@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dip"
+    android:gravity="left|top"
+    android:background="@android:color/transparent"
+    >
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="7"
+            android:background="@drawable/select_roundrect_background_article">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:weightSum="8"
+                 />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:weightSum="6"
+                android:gravity="start|center_vertical"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:weightSum="8"
+                    />
+
+
+                <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:id="@+id/_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.9"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dmsDarkGrey"
+                    android:text="HeadTeacher"
+                    />
+
+                <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:id="@+id/_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dmsDarkGrey"
+                    android:text="Start Date: 25th July 2016"
+                    />
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="3.5"
+                android:gravity="start|center_vertical"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:weightSum="8"
+                    />
+
+                <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:id="@+id/_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/DarkSlateGray"
+                    android:text="Mr Destiny Okemute"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="3"
+                android:gravity="start|top"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:weightSum="8"
+                    />
+
+                <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:id="@+id/_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dmsDarkGrey"
+                    android:text="Male"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:weightSum="8"
+                    />
+
+                <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:id="@+id/_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dmsPink"
+                    android:text="Nasarawa state"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</RelativeLayout>

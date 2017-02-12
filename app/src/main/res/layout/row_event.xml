@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dip"
+    android:gravity="left|top"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:weightSum="30"
+        android:gravity="start|top"
+        android:background="@color/White"
+        >
+
+    <LinearLayout
+        android:id="@+id/eventleft"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:weightSum="9"
+        android:gravity="start|top"
+        android:background="@color/dmsPink400"
+        >
+
+        <TextView
+            android:id="@+id/_event_month"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.8"
+            android:text="Mar"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textScaleX="1"
+            android:textSize="14dp"
+            android:textColor="@color/AntiqueWhite"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="center_horizontal|bottom"/>
+
+        <TextView
+            android:id="@+id/_event_day"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.2"
+            android:text="01"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textScaleX="1"
+            android:textSize="21dp"
+            android:textColor="@color/White"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="center_horizontal|top"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:weightSum="6"
+        android:gravity="start|top"
+        android:background="@drawable/dot_white">
+        <TextView
+            android:id="@+id/_event_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Undergraduate Open-day 2015"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textScaleX="1"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/BlackFb"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="left"/>
+<!--
+
+        'Open Day 2016', 'Open days are as important to your child''s success as your work is to
+        your financial balance. Do not miss this opportunity to asses your wards.',
+        'School Pupils, Parents and Teacher', '1414772938', 'School Pavilion'), ('',
+
+        'Summer coaching lessons', 'COme the 27th of september , 2016,the daniellas montessori school annual
+        smmer coaching would commence. This is in a bid to help students make the best of their time during
+        the holidays, meeting new friends and various other opportunities which awaits them as the come',
+        'Teachers, Students', '1414782938', 'School grounds');-->
+
+        <TextView
+            android:id="@+id/_event_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:text="Open days are an important part of your childs school life"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/GreyTextFb"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="left|center_vertical"/>
+
+        <TextView
+            android:id="@+id/_event_participants"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="Students/Parents"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textScaleX="1"
+            android:textSize="10.5sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/GreyTextFb"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lay"
+        android:background="@color/Gray"
+        android:layout_marginTop="2dp"
+        />
+</RelativeLayout>

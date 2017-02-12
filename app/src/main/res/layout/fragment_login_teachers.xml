@@ -1,0 +1,323 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentLoginTeachers"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:weightSum="10"
+            android:background="@drawable/select_roundrect_background_login">
+
+            <!--<LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="8"
+                android:gravity="start|bottom"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:gravity="start|bottom"
+                    >
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@color/dmsPink"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:weightSum="5"
+                    android:gravity="left|bottom"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.5"
+                        android:gravity="left|center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="LOGIN"
+                            android:textColor="@color/dmsPink"
+                            android:fontFamily="sans-serif-thin"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical"/>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:weightSum="8"
+                android:gravity="center_vertical|start"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:weightSum="8"
+                android:gravity="center_vertical|start"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:gravity="start|center_vertical"
+                    >
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@color/dmsPink"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:weightSum="5"
+                    android:gravity="left|center_vertical"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.5"
+                        android:gravity="left|center_vertical"
+                        >
+
+                       <!-- <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Articles"
+                            android:textColor="@color/dmsPurple"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:textSize="19sp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical"/>-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="LOGIN"
+                            android:textColor="@color/dmsPink"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:textSize="19sp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="5"
+                    android:gravity="left|center_vertical"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="8"
+                android:gravity="start|bottom"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|bottom"
+                    />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:gravity="bottom|center_horizontal"
+                        >
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <EditText android:id="@+id/_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textNoSuggestions"
+                                    android:textColorHint="@color/dmsGrey"
+                                    android:textColor="@color/dmsDarkGrey"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textStyle="normal"
+                                    android:elegantTextHeight="true"
+                                    android:hint="Username"/>
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"
+                android:weightSum="8"
+                android:gravity="start|bottom"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|bottom"
+                    />
+
+                        <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:weightSum="3"
+                        android:gravity="bottom|center_horizontal"
+                        >
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText android:id="@+id/_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textWebPassword"
+                                android:textColorHint="@color/dmsGrey"
+                                android:textColor="@color/dmsDarkGrey"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textStyle="normal"
+                                android:elegantTextHeight="true"
+                                android:hint="Password" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.4"
+                android:weightSum="3"
+                android:gravity="center"
+                >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:weightSum="6"
+                android:gravity="center_vertical|center_horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/_signin_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/checkmark2"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/select_roundrect_background_purple"
+                    android:alpha="0.9"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/_signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teacher"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:background="@drawable/select_roundrect_background_pink"
+                android:alpha="0.9"/>
+        </LinearLayout>-->
+
+</FrameLayout>

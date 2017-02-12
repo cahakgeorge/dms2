@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "234717364700",
+    "firebase_url": "https://dms-app-8c33e.firebaseio.com",
+    "project_id": "dms-app-8c33e",
+    "storage_bucket": "dms-app-8c33e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234717364700:android:547dcc8603b6906a",
+        "android_client_info": {
+          "package_name": "com.daniellasmontesssorischool.dms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234717364700-brvv583hgi3gaj8ecb6r88dnfpe7v328.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKHthlJ7xFVBM69eAxtpHTcsFxjnx-f6w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

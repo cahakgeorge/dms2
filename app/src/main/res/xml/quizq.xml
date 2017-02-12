@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz>
+
+    <record subject="general" question="What do Americans call a dinner jacket?" option1="Tuxedo" option2="Shirt" option3="ZomTux" option4="CasTux" answer="Tuxedo" difficulty="hard"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What is the Roman numeral for one thousand?" option1="M" option2="CM" option3="L" option4="D" answer="M" difficulty="easy"/>
+
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What is the world's most common type of plant?" option1="YellowFlower" option2="Banana Leaf" option3="Grass" option4="Eat" answer="Forget" difficulty="easy"/>
+
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What is the Chinese for 'Dark and Light' believed to maintain equilibrium?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="How many colours are in a rainbow?" option1="1" option2="2" option3="4" option4="7" answer="7" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+    <record subject="general" question="What do elephants never do according to the saying?" option1="Kill" option2="Forget" option3="Chase People" option4="Eat" answer="Forget" difficulty="easy"/>
+
+
+    <record subject="general" question="Who killed Osama?" option1="Obama" option2="Navy seals" option3="Zombies" option4="Mr Chuks" answer="Mr Chuks" difficulty="hard"/>
+</quiz>

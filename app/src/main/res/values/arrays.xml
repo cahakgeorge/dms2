@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="articles">
+        <item>Select Article</item>
+        <item>Essay</item>
+        <item>Poem</item>
+        <item>Debate</item>
+        <item>Random Article</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Hard</item>
+        <item>Take a Challenge</item>
+    </string-array>
+
+    <string-array name="stclass">
+        <item>Select Class</item>
+        <item>Year 1</item>
+        <item>Year 2</item>
+        <item>Year 3</item>
+        <item>Year 4</item>
+        <item>Year 5</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="taction">
+        <item>Block Teacher</item>
+        <item>Delete Account</item>
+        <item>Reset Account</item>
+    </string-array>
+</resources>

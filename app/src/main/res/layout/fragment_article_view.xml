@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentArticle"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="11"
+            android:gravity="top"
+            android:background="@color/White">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:weightSum="5"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:weightSum="3"
+                    android:gravity="start|center_vertical"
+                    >
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:weightSum="8"
+                        />
+
+
+                    <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                        android:id="@+id/_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.7"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dmsDarkGrey"
+                        android:text="Mary Cynthia"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:weightSum="8"
+                        />
+
+
+                    <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                        android:id="@+id/_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dmsPink"
+                        android:text="Year 2"
+                        />
+                    <TextView android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                        android:id="@+id/_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dmsPink"
+                        android:text=" (Jan 25th, 2016) "
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:weightSum="8"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="THE ROAD TO NOWHERE"
+                    android:textColor="@color/dmsPurple"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:weightSum="5"
+                android:gravity="top|center_horizontal"
+                >
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.5"
+                    android:layout_height="match_parent">
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="3.4"
+                        android:layout_height="wrap_content"
+                        android:text="Daniellas Montessori School, is a place where learning is valued and values are learned. We prepare kids for new challenges, demands and opportunities of the future by providing high quality learning that will inspire all pupils \n to go ahead and acheive greater feats \n in life."
+                        android:textColor="@color/dmsPurple"
+                        android:fontFamily="casual"
+                        android:textStyle="normal"
+                        android:textSize="16sp"
+                        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                        android:textAlignment="gravity"
+                        android:gravity="center_horizontal|top"/>
+
+                    </ScrollView>
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

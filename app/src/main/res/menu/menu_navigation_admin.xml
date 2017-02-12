@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/img_assign"
+            android:checked="false"/>
+
+        <!--<item
+            android:id="@+id/curriculum"
+            android:title="Curriculum"
+            android:icon="@drawable/img_test"/>-->
+
+        <item
+            android:id="@+id/calendar"
+            android:title="Calendar"
+            android:icon="@drawable/perm_group_calendar"/>
+
+        <item
+            android:id="@+id/event"
+            android:title="Events"
+            android:icon="@drawable/img_article"/>
+
+        <item
+            android:id="@+id/news"
+            android:title="School News"
+            android:icon="@drawable/img_article"/>
+
+        <item
+            android:id="@+id/about"
+            android:title="About DMS"
+            android:icon="@drawable/ic_perm_device_info"/>
+
+        <item
+            android:id="@+id/location"
+            android:title="View Location"
+            android:icon="@drawable/perm_group_phone_calls"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/img_assign"/>
+
+
+        <item android:title="Admin Functions">
+
+                <menu>
+                        <group android:checkableBehavior="single">
+
+                                <item
+                                    android:id="@+id/manageteachers"
+                                    android:title="Manage Teachers"
+                                    android:icon="@drawable/perm_group_contacts"/>
+
+                                <item
+                                    android:id="@+id/managestudents"
+                                    android:title="Manage Teachers"
+                                    android:icon="@drawable/perm_group_contacts"/>
+
+                        </group>
+
+                </menu>
+
+        </item>
+
+    <!--<item android:title="Prime">
+    <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/img_assign"
+            app:showAsAction="ifRoom"
+            android:checked="false"/>
+
+        <item
+            android:id="@+id/subjects"
+            android:title="Curriculum"
+            android:icon="@drawable/img_test"/>
+
+        <item
+            android:id="@+id/calendar"
+            android:title="Calendar"
+            android:icon="@drawable/img_article"/>
+
+        <item
+            android:id="@+id/events"
+            android:title="Events"
+            android:icon="@drawable/img_article"/>
+
+        </group>
+
+    </menu>
+    </item>
+
+
+    <item android:title="Others">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/about"
+                    android:title="About DMS"
+                    android:icon="@drawable/img_article"/>
+
+                <item
+                    android:id="@+id/contact"
+                    android:title="Contact Us"
+                    android:icon="@drawable/img_article"/>
+
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@drawable/img_assign"/>
+            </group>
+
+        </menu>
+
+    </item>
+
+-->
+
+</menu>

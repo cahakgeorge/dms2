@@ -1,0 +1,269 @@
+ <android.support.design.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".FragmentCurriculum"
+        android:clickable="true"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/darkestgrey"
+                android:alpha="0.8"
+                android:gravity="top">
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9.4"
+                    android:gravity="top"
+                    android:weightSum="10">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9.4"
+                        android:gravity="top"
+                        android:weightSum="10"
+                        android:background="@color/White">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                            android:minHeight="50dp"
+                            android:weightSum="5"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/backg"
+                            android:paddingLeft="0dp"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:id="@+id/_subject"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mathematics Assignment"
+                                android:textColor="@color/white"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textStyle="bold"
+                                android:textSize="22sp"
+                                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                                android:textAlignment="gravity"
+                                android:gravity="center_horizontal|top"/>
+
+                           <!-- <TextView
+                                android:id="@+id/_news_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tue,22 July 2014 12:00 AM"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:textScaleX="1"
+                                android:textSize="10.5sp"
+                                android:textColor="@color/dmsnewstype"
+                                android:fontFamily="sans-serif"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textAlignment="gravity"
+                                android:gravity="bottom|end"/>-->
+
+
+                            <!--<TextView
+                                android:id="@+id/_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="DMS Students to embark on a protest tomorrow"
+                                android:textColor="@color/white"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                                android:textAlignment="gravity"
+                                android:gravity="center_horizontal|top"/>-->
+                            <!--<Button
+                                android:id="@+id/_stud_class"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.6"
+                                android:src="@drawable/checkmark"
+                                android:clickable="false"
+                                android:text="Student Class"
+                                android:textSize="13dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/select_roundrect_background_pinkhome"
+                                android:alpha="0.9"/>-->
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/_topic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Topic: Linear Equation"
+                            android:textColor="@color/BlackFb"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="start|top"/>
+
+                        <TextView
+                            android:id="@+id/_class"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Class: Year 1"
+                            android:textColor="@color/BlackFb"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="normal"
+                            android:textSize="18sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="start|top"/>
+
+                        <TextView
+                            android:id="@+id/_submDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Submission date: 21st of August 2016"
+                            android:textColor="@color/dmsPink"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="normal"
+                            android:textSize="18sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="start|top"/>
+
+
+
+                        <android.support.v4.widget.NestedScrollView
+                            android:id="@+id/scroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+                            >
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="5"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Question"
+                                    android:textColor="@color/BlackFb"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textStyle="bold"
+                                    android:textSize="19sp"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                                    android:textAlignment="gravity"
+                                    android:gravity="start|top"/>
+
+                                <TextView
+                                    android:id="@+id/_qdetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Get the sum of all the numbers in this series 2,10,11,12,13"
+                                    android:textColor="@color/BlackFb"
+                                    android:fontFamily="sans-serif"
+                                    android:textStyle="normal"
+                                    android:textSize="17sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                                    android:textAlignment="gravity"
+                                    android:gravity="start"/>
+
+                                <TextView
+                                    android:id="@+id/_qextra"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Extra Info: Remember to use the sum of all the numbers in the"
+                                    android:textColor="@color/BlackFb"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textStyle="normal"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                                    android:textAlignment="gravity"
+                                    android:gravity="start|top"/>
+
+                                <TextView
+                                    android:id="@+id/_qteacher"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="By: Mr Destiny"
+                                    android:textColor="@color/BlackFb"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textStyle="normal"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="2dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                                    android:textAlignment="gravity"
+                                    android:gravity="end|bottom"/>
+
+                            </LinearLayout>
+                        </android.support.v4.widget.NestedScrollView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

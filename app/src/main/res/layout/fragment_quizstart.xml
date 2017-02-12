@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/White">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dip"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/q"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="0dip"
+			android:layout_marginTop="20dip"
+			android:text="QUESTION"
+			android:textColor="#040404"
+			android:textSize="17sp"
+			android:textStyle="bold"
+			android:layout_weight="0.1"
+			android:typeface="sans" />
+		<TextView
+			android:id="@+id/question"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="12dip"
+			android:layout_marginTop="20dip"
+            android:layout_marginRight="12dp"
+			android:text="What is the major purpose of javascript being used in web designing?"
+			android:textColor="@color/dmsPurple"
+			android:textSize="17sp"
+			android:textStyle="bold"
+			android:layout_weight="0.9"
+			android:typeface="sans" />
+	</LinearLayout>
+
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dip"
+		android:orientation="vertical"
+		android:weightSum="1.0">
+
+        <LinearLayout
+            android:id="@+id/lay0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:weightSum="1.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:minHeight="50dp">
+
+            <TextView
+                android:id="@+id/outputtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:text=""
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:fontFamily="casual"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:weightSum="1.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:minHeight="20dp">
+
+            <TextView
+                android:id="@+id/qnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dmsPink"
+                android:text=""
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:fontFamily="casual"
+                android:layout_gravity="center_vertical"
+                android:gravity="end|center_vertical"
+                android:textSize="12sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/lay1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="@drawable/select_roundrect_background_quizoptborder"
+			android:clickable="true"
+			android:weightSum="1.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+			android:gravity="start|center_vertical"
+            android:minHeight="50dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textColor="#040404"
+                android:layout_weight="0.2"
+				android:text="a: "
+				android:layout_marginLeft="10dip"
+				android:layout_marginTop="2dip"
+				android:layout_gravity="center_vertical"
+				android:textSize="17sp"
+				android:typeface="sans" />
+
+			<TextView
+				android:id="@+id/opt1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#040404"
+				android:text="The boy from here"
+				android:layout_marginLeft="10dip"
+				android:layout_marginTop="2dip"
+				android:layout_gravity="center_vertical"
+				android:textSize="16sp"
+				android:typeface="sans" />
+		</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/select_roundrect_background_quizoptborder"
+            android:clickable="true"
+            android:weightSum="1.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="50dp"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:layout_weight="0.2"
+                android:text="b: "
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:layout_gravity="center_vertical"
+                android:textSize="17sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:text="The man next door"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/select_roundrect_background_quizoptborder"
+            android:clickable="true"
+            android:weightSum="1.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="50dp"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:layout_weight="0.2"
+                android:text="c: "
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:layout_gravity="center_vertical"
+                android:textSize="17sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/opt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:text="The boy from nowhere"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/select_roundrect_background_quizoptborder"
+            android:clickable="true"
+            android:weightSum="1.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="50dp"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:layout_weight="0.2"
+                android:text="d: "
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:layout_gravity="center_vertical"
+                android:textSize="17sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/opt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:text="The girl who lived"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

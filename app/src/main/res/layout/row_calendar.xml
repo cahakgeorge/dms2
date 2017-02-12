@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dip"
+    android:gravity="left|top"
+    android:background="@color/WhiteSmoke"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:background="@drawable/select_sqrect_background_calendar"
+        android:layout_marginTop="6dp"
+        >
+
+    <LinearLayout
+        android:id="@+id/_picimage"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:weightSum="5.5"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/app_img2"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:gravity="right"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/DeepPink">
+
+                <TextView
+                    android:id="@+id/_pic_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Holiday"
+                    android:textColor="@color/AntiqueWhite"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.9"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:weightSum="4"
+            android:gravity="left"
+            android:layout_gravity="bottom"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:background="@color/White">
+
+                <TextView
+                    android:id="@+id/_pic_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SEP"
+                    android:textSize="14dp"
+                    android:textColor="@color/Gray"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:gravity="left"
+            android:layout_gravity="bottom"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:background="@color/DeepPink">
+
+                <TextView
+                    android:id="@+id/_pic_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="01"
+                    android:textSize="20dp"
+                    android:textColor="@color/AntiqueWhite"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|top"
+            android:layout_below="@+id/_picimage"
+            >
+
+            <LinearLayout
+                android:id="@+id/_rel_title"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="bottom"
+                >
+
+                <TextView
+                    android:id="@+id/_cal_header"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.2"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textScaleX="0.9"
+                    android:layout_marginTop="0dp"
+                    android:textSize="19dp"
+                    android:textColor="@color/dmsPurple"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/_rel_detail"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:gravity="center_horizontal|top"
+                android:layout_below="@+id/_rel_title"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/_cal_details"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.2"
+                    android:layout_height="wrap_content"
+                    android:maxLength="900"
+                    android:text=""
+                    android:ellipsize="start"
+                    android:textScaleX="0.9"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dmsDarkGrey"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="left"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/_rel_interval"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:gravity="center_horizontal|top"
+                android:layout_below="@+id/_rel_detail"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:id="@+id/_cal_interval"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.2"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:ellipsize="start"
+                    android:textScaleX="0.9"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dmsDarkGrey"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="left"/>
+            </LinearLayout>
+
+
+            <!--<LinearLayout
+                android:id="@+id/_cal_link_parent"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:gravity="center_horizontal|top"
+                android:layout_gravity="bottom"
+                android:layout_below="@+id/_rel_interval">
+
+                <TextView
+                    android:id="@+id/_cal_link_child"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.2"
+                    android:layout_height="wrap_content"
+                    android:text="Find out more"
+                    android:ellipsize="start"
+                    android:textScaleX="0.9"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dmsPurple"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="left"/>
+            </LinearLayout>-->
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!--
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="0dp"
+android:layout_weight="0.8"
+android:layout_height="148dp"
+android:weightSum="5"
+android:layout_marginLeft="2dp"
+android:gravity="center_horizontal|center_vertical"
+android:layout_gravity="center"
+>
+
+<FrameLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="3">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/indicator5"
+        />
+
+    <TextView
+        android:id="@+id/_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="M+"
+        android:textColor="@color/AntiqueWhite"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textScaleX="1.1"
+        android:scaleY="2.6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="0dp"
+android:layout_weight="4.7"
+android:layout_height="140dp"
+android:weightSum="6"
+android:layout_marginLeft="0dp"
+android:gravity="center_horizontal|top"
+android:layout_gravity="center"
+    >
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.4"
+    android:weightSum="5"
+    android:layout_marginLeft="0dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/_assign_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mathematics"
+        android:textScaleX="0.9"
+        android:textColor="@color/black"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textAlignment="gravity"
+        android:gravity="left"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2.4"
+    android:weightSum="5"
+    android:layout_marginLeft="0dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/_assign_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Mathematics can be a very good course for discuss in the twentf first century. Discuss on that and produce feedback to the general public n how to go about it and the name of the pre"
+        android:ellipsize="start"
+        android:textScaleX="0.7"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/dmsPurple"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textAlignment="gravity"
+        android:gravity="left"/>
+
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.3"
+    android:layout_marginTop="0dp"
+    />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginLeft="0dp"
+    android:gravity="left|center_vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/_assign_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submission date : "
+        android:textScaleX="0.7"
+        android:textSize="13sp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textAlignment="gravity"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/_assign_date_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday 24th (tomorrow)"
+        android:textScaleX="0.6"
+        android:textSize="11sp"
+        android:layout_marginLeft="0dp"
+        android:textColor="@color/dmsDarkGrey"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:textAlignment="gravity"
+        android:gravity="left"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.8"
+    android:weightSum="5"
+    android:layout_marginLeft="0dp"
+    android:gravity="right|center_vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/_assignee_nameholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent in by: "
+        android:textColor="@color/dmsPink"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textSize="8sp"
+        android:layout_marginLeft="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse"
+        android:textAlignment="gravity"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/_assignee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr Destiny"
+        android:textColor="@color/dmsPurple"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textSize="8.5sp"
+        android:layout_marginLeft="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small"
+        android:textAlignment="gravity"
+        android:gravity="left"/>
+
+</LinearLayout>
+
+</LinearLayout>-->

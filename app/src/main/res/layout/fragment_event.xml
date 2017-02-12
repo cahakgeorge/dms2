@@ -1,0 +1,207 @@
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".FragmentEvents"
+        >
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/WhiteSmoke">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="top">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dmsPurple"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="11"
+                    android:gravity="top">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="11"
+                        android:gravity="top|center_horizontal"
+                        android:background="@drawable/background_tabs"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:weightSum="5.5"
+                            android:background="@drawable/app_img7"
+                            >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5"
+                                android:weightSum="4"
+                                android:gravity="left"
+                                android:layout_gravity="bottom"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_marginTop="0dp"
+                                        android:src="@drawable/dms_logo"
+                                        android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+                                </LinearLayout>
+                                </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3.5"
+                                />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5"
+                                android:weightSum="4"
+                                android:gravity="right"
+                                android:layout_gravity="bottom"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/White">
+
+                                    <TextView
+                                        android:id="@+id/_pic_month"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="First Term"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/Gray"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:textStyle="bold"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        android:textAlignment="gravity"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"/>
+
+
+                                </LinearLayout>
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+                       <!-- <TextView
+                            android:id="@+id/_cal_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=">>Click to view event details"
+                            android:textScaleX="1"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/dmsPurple"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textAlignment="gravity"
+                            android:gravity="center"/>
+-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/dmsPurple"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <android.support.v4.widget.SwipeRefreshLayout
+                                android:id="@+id/swipeRefreshLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_view_cec"
+                                android:scrollbars="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/background_tabs_diagonal"
+                                />
+                            </android.support.v4.widget.SwipeRefreshLayout>
+
+                            <LinearLayout
+                                android:id="@+id/_retry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/ic_menu_refresh"
+                                    android:alpha="0.9"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_gravity="center_horizontal|top"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Retry"
+                                    android:textColor="@color/Gray"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textStyle="bold"
+                                    android:textSize="17sp"
+                                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                                    android:textAlignment="gravity"
+                                    android:gravity="center_vertical|center_horizontal"/>
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-5dp"
+                    android:background="@color/dmsPurple"/>-->
+
+            </LinearLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+    </FrameLayout>

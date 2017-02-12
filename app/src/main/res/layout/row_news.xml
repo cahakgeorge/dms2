@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dip"
+    android:gravity="left|top"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="30dp"
+    android:background="@android:color/transparent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:weightSum="30"
+        android:gravity="start|top"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/select_roundrect_background_article"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="29.4"
+        android:weightSum="6"
+        android:gravity="start|top"
+        >
+        <TextView
+            android:id="@+id/_news_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="School security initiative"
+            android:textScaleX="1"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/dmsPink"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="left"/>
+
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:weightSum="4"
+            android:gravity="center_vertical|right">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal|top">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/select_circle2"
+                android:alpha="0.9"
+                android:layout_gravity="center_horizontal|top"/>
+            <!--<android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/dms_logo"
+                android:layout_gravity="center_horizontal|top"/>-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="35dp"
+                    android:layout_height="60dp"
+
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/dms_logo"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+            </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/_news_detail"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:text="Parents are advised take note of the various secuirity measures put in place by the school. This is in a bid to ensure the safety of their wards"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/dmsPurple"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="left"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:weightSum="4"
+            android:gravity="center_vertical|left">
+
+        <TextView
+            android:id="@+id/_news_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Tue,22 July 2014 12:00 AM"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textScaleX="1"
+            android:textSize="10.5sp"
+            android:textColor="@color/dmsnewstype"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="gravity"
+            android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_news_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="General"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textScaleX="1"
+                android:textSize="10.5sp"
+                android:textColor="@color/dmsnewstype"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textAlignment="gravity"
+                android:gravity="right"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="19dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow"
+            android:id="@+id/circleView"
+            android:tintMode="multiply"
+            android:foregroundTint="@color/dmsPink"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#ffffff"
+            />
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lay"
+        android:background="@color/Gray"
+        android:layout_marginTop="2dp"
+        />-->
+</RelativeLayout>

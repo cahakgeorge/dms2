@@ -1,0 +1,167 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentManageAssignments"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:background="@color/dmsGrey"
+                android:alpha="0.95"
+                >
+
+                <!-- <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:background="@color/black"/>-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:minHeight="50dp"
+                    >
+                    <!-- <View
+                         android:layout_width="match_parent"
+                         android:layout_height="0.5dp"
+                         android:background="@color/black"/>-->
+                    <EditText android:id="@+id/_ntitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:maxLength="100"
+                        android:inputType="textNoSuggestions"
+                        android:textColorHint="#05ab9a"
+                        android:textColor="@color/dmsDarkGrey"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="normal"
+                        android:elegantTextHeight="true"
+                        android:hint="News Title"
+                        android:background="@drawable/select_sqrect_background"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp">
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/black"/>-->
+                    <EditText android:id="@+id/_ndetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textNoSuggestions"
+                        android:textColorHint="#05ab9a"
+                        android:textColor="@color/dmsDarkGrey"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="normal"
+                        android:elegantTextHeight="true"
+                        android:minHeight="80dp"
+                        android:maxLength="700"
+                        android:textAlignment="gravity"
+                        android:gravity="top|start"
+                        android:minLines="3"
+                        android:hint="News Detail"
+                        android:background="@drawable/select_sqrect_background"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black"/>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp">
+                    <!-- <View
+                         android:layout_width="match_parent"
+                         android:layout_height="0.5dp"
+                         android:background="@color/black"/>-->
+                    <EditText android:id="@+id/_ntype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:maxLength="19"
+                        android:inputType="textNoSuggestions"
+                        android:textColorHint="#05ab9a"
+                        android:textColor="@color/dmsDarkGrey"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="normal"
+                        android:elegantTextHeight="true"
+                        android:hint="News Type"
+                        android:background="@drawable/select_sqrect_background"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/_upload_field"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_marginTop="100dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/_upload_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="10"
+                android:clickable="true"
+                android:text="ADD NEWS"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:drawableRight="@drawable/ic_send2"
+                android:gravity="left|center_vertical"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/select_roundrect_background3purple"
+                android:alpha="0.9"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
